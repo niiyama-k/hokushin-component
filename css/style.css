@@ -1,0 +1,117 @@
+html {
+  font-size: 0.7320644217vw;
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 1.8229166667vw;
+  }
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: #fff;
+}
+
+h2 {
+  font-size: 2.4rem;
+  width: 100%;
+  text-align: center;
+  font-weight: bold;
+  margin: 3rem 0;
+}
+
+.grid {
+  display: grid;
+}
+
+.container {
+  width: calc(100vw - 10rem);
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: calc(100vw - 5rem);
+  }
+}
+
+.c-calender {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.c-calender__header {
+  width: 100%;
+  position: relative;
+  padding: 1.5rem 0;
+}
+.c-calender__header span {
+  width: 2rem;
+  height: 2rem;
+  border-top: 0.5rem solid #333;
+  border-right: 0.5rem solid transparent;
+  border-left: 0.5rem solid #333;
+  border-bottom: 0.5rem solid transparent;
+  position: absolute;
+  top: 2rem;
+}
+.c-calender__header .arrow-right {
+  transform: rotate(135deg);
+  right: 5rem;
+}
+.c-calender__header .arrow-left {
+  transform: rotate(-45deg);
+  left: 5rem;
+}
+.c-calender__header p {
+  width: 100%;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+.c-calender__day {
+  height: 6rem;
+  grid-template-columns: repeat(7, 1fr);
+  align-content: center;
+  border-bottom: 0.5px solid #ccc;
+}
+.c-calender__day span {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.c-calender__day .sun {
+  color: red;
+}
+.c-calender__day .sat {
+  color: blue;
+}
+.c-calender__date {
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 8rem;
+  gap: 0.3rem;
+  margin-top: 3rem;
+}
+.c-calender__date span {
+  display: block;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+  padding: 1rem;
+}
+.c-calender__date span:not(:empty) {
+  border: 2px solid #ccc;
+}
+.c-calender__date span:not(:empty):not(.full):hover {
+  background-color: #FEE104;
+}
+.c-calender__date span:nth-child(7n) {
+  color: blue;
+}
+.c-calender__date span:nth-child(7n+1) {
+  color: red;
+}
+.c-calender__date .full {
+  background-color: #ccc;
+}/*# sourceMappingURL=style.css.map */
